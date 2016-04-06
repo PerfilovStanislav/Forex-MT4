@@ -1,0 +1,17 @@
+﻿Metatrader server gives wrong quotes. For our tests we need true data. 
+Use special script 'convert_from_MT5_to_MT4.ex5' for converting quotes from MT5 to MT4. (script uploaded here)
+Put this script in YourBroker_MT5_folder\MQL5\Scripts\
+
+instruction: 
+• open mt5 of your broker
+• open window with required pair (EURUSD) and timeframe (H4)
+• replace script to window
+• wait some minutes (script will save quotes to YourBroker_MT5_folder\MQL5\files\EURUSD_H4.csv)
+• open MT4
+• press F2
+• find our pair (EURUSD H4)
+• press import
+• choose our saved file from MT5 (YourBroker_MT5_folder\MQL5\files\EURUSD_H4.csv)
+• press ok
+
+It's all... Now you can test EA with actual data
